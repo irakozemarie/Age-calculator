@@ -6,8 +6,10 @@ function calculateAge(){
     
   const birthdayvalue =birthdayE1.value;
 if(birthdayvalue === ""){
-    alert("please enter your birthday");
-}else{
+    resultE1.innerText = `Please enter your birthday`;
+
+}
+else{
     const age = getAge(birthdayvalue);
     resultE1.innerText = `Your Age is  ${age} ${age > 1 ? "years" : "years"} old`;
 }
